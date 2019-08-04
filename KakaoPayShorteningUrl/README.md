@@ -63,26 +63,26 @@ https://en.wikipedia.org/wiki/URL_shortening => http://localhost/RTbpeNTl
 ##**빌드 및 생성 방법**
 - InMemoryDB 설치 프로젝트에 첨부된 db-derby-10.14.2.0-bin.zip => 설치경로 C:\Apache
 	
-	1. 프롬프트 창 OPEN
-	C:\>cd Apache
-	C:\Apache>cd db-derby-10.14.2.0-bin
-	C:\Apache\db-derby-10.14.2.0-bin>cd bin
-	C:\Apache\db-derby-10.14.2.0-bin\bin>startNetworkServer
-	Sat Aug 03 03:12:35 KST 2019 : 기본 서버 보안 정책을 사용하여 보안 관리자가 설치
-	됩니다.
+	1. 프롬프트 창 OPEN  
+	C:\>cd Apache  
+	C:\Apache>cd db-derby-10.14.2.0-bin  
+	C:\Apache\db-derby-10.14.2.0-bin>cd bin  
+	C:\Apache\db-derby-10.14.2.0-bin\bin>startNetworkServer  
+	Sat Aug 03 03:12:35 KST 2019 : 기본 서버 보안 정책을 사용하여 보안 관리자가 설치  
+	됩니다.  
 	Sat Aug 03 03:12:36 KST 2019 : Apache Derby 네트워크 서버 - 10.14.2.0 - (1828579
-	)이(가) 시작되어 1527 포트에서 접속을 승인할 준비가 되었습니다.
+	)이(가) 시작되어 1527 포트에서 접속을 승인할 준비가 되었습니다.  
 
-	2. 새로운 프롬프트창 OPEN
-	C:\>cd Apache
-	C:\Apache>cd db-derby-10.14.2.0-bin
-	C:\Apache\db-derby-10.14.2.0-bin>cd bin
-	C:\Apache\db-derby-10.14.2.0-bin\bin>ij
-	ij 버전 10.14
-	ij> driver 'org.apache.derby.jdbc.ClientDriver';
-	ij> connect 'jdbc:derby://localhost:1527/MyDb';
-	ij>
-	테이블 및 시퀀스 생성
-	CREATE TABLE URL_MAPPING (ID INT NOT NULL,  RAW_URL VARCHAR(4000), SHORT_URL VARCHAR(8));
-	CREATE sequence seq AS int start with 1;
+	2. 새로운 프롬프트창 OPEN  
+	C:\>cd Apache  
+	C:\Apache>cd db-derby-10.14.2.0-bin  
+	C:\Apache\db-derby-10.14.2.0-bin>cd bin  
+	C:\Apache\db-derby-10.14.2.0-bin\bin>ij  
+	ij 버전 10.14  
+	ij> driver 'org.apache.derby.jdbc.ClientDriver';  
+	ij> connect 'jdbc:derby://localhost:1527/MyDb';  
+	ij>  
+	테이블 및 시퀀스 생성  
+	CREATE TABLE URL_MAPPING (ID INT NOT NULL,  RAW_URL VARCHAR(4000), SHORT_URL VARCHAR(8));  
+	CREATE sequence seq AS int start with 1;  
 	  
