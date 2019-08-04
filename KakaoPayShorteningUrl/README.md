@@ -61,7 +61,7 @@ https://en.wikipedia.org/wiki/URL_shortening => http://localhost/RTbpeNTl
   
   
 ##**빌드 및 생성 방법**
-- InMemoryDB 설치 프로젝트에 첨부된 db-derby-10.14.2.0-bin.zip => 설치경로 C:\Apache
+- InMemoryDB(Appach Derby) 설치 프로젝트에 첨부된 db-derby-10.14.2.0-bin.zip => 설치경로 C:\Apache
 	
 	1. 프롬프트 창 OPEN  
 	C:\>cd Apache  
@@ -84,5 +84,5 @@ https://en.wikipedia.org/wiki/URL_shortening => http://localhost/RTbpeNTl
 	ij>  
 	테이블 및 시퀀스 생성  
 	CREATE TABLE URL_MAPPING (ID INT NOT NULL,  RAW_URL VARCHAR(4000), SHORT_URL VARCHAR(8));  
-	CREATE sequence seq AS int start with 1;  
-	  
+	CREATE sequence seq AS int start with 1;   
+- Eclipse Import 및 tomcat Setting 후 RootPage 호출
