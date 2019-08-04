@@ -1,0 +1,44 @@
+@charset "EUC-KR";
+
+body{
+  background: #343d46;
+}
+ 
+.box{
+  margin: 100px auto;
+  width: 500px;
+  height: 50px;
+}
+
+.container-1 input#text{
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 13pt;
+  float: left;
+  color: white;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+
+    .btn {
+ border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            margin-right:-4px;
+            height: 50px;
+            color: #400000;
+
+
+    }
+
+    .btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+  color:white;
+            background-color: skyblue;
+
+
+    }
